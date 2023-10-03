@@ -4,12 +4,12 @@
 
 ## Overview
 
-`extremum.py` is a command-line interface (CLI) tool that returns the local minima and maxima of a specified column in a CSV file. The output is provided in JSON format as follows:
+`extremum.py` is a command-line interface (CLI) tool that returns indices of the local minima and maxima of a specified column in a CSV file. The output is provided in JSON format as follows:
 
 ```json
 {
-  "min": [max indices],
-  "max": [min indices]
+  "min": [i1, i2, ..., im],
+  "max": [j1, j2, ..., jn]
 }
 ```
 

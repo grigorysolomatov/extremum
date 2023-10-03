@@ -6,8 +6,8 @@ import json
 app = typer.Typer()
 
 help_string = '''
-Returns local minima and maxima of a csv column to standard output in json format:
-{"min": [MIN_INDICES], "max": [MAX_INDICES]}
+Returns indices of local minima and maxima of a csv column to standard output in json format:
+{"min": [i1, i2, ..., in], "max": [j1, j2, ..., jn]}
 '''
 
 @app.command(help=help_string)
